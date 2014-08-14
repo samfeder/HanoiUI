@@ -30,17 +30,17 @@ body {
   margin: 25px;
   margin-top: 460px;
   height: 100px;
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.50);
   cursor: pointer;
   transform:rotate(180deg);
 }
 
-.stack:hover {
-  background-color: rgba(128, 128, 128, 0.51);
-}
-
 .disc {
   margin-top: auto;
+}
+
+.clicked {
+  background-color: rgba(128, 128, 128, 0.85);
 }
 
 #disc3 {

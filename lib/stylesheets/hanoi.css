@@ -32,13 +32,18 @@ body {
   height: 100px;
   background-color: gray;
   cursor: pointer;
+  transform:rotate(180deg);
 }
 
 .stack:hover {
   background-color: rgba(128, 128, 128, 0.51);
 }
 
-#big {
+.disc {
+  margin-top: auto;
+}
+
+#disc3 {
   display: block;
   margin: auto;
   height: 25px;
@@ -48,7 +53,7 @@ body {
   border-radius: 25px;
 }
 
-#mid {
+#disc2 {
   display: block;
   margin: auto;
   height: 25px;
@@ -58,7 +63,7 @@ body {
   border-radius: 25px;
 }
 
-#small {
+#disc1 {
   display: block;
   margin: auto;
   height: 25px;

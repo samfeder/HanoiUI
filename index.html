@@ -1,31 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" type="text/css" href="lib/stylesheets/ttt.css">
-  </head>
+<head>
+  <link rel="stylesheet" type="text/css" href="lib/stylesheets/hanoi.css">
+</head>
+<body class="group">
+  <h1>Towers of Hanoi</h1>
 
-  <body>
-    <h1>Tic Tac Toe</h1>
-    <ul id="ttt-board" class="group">
+  <div class="stack" id="0">
+    <div class="disc" id="small"></div>
+    <div class="disc" id="mid"></div>
+    <div class="disc" id="big"></div>
+  </div>
+
+  <div class="stack" id="1"></div>
+
+  <div class="stack" id="2"></div>
+
+    <script src="lib/javascripts/Hanoi_ui.js"></script>
+<script src="vendor/javascripts/jquery-2.1.1.js" type="text/javascript" charset="utf-8"></script>
 
 
-
-    </ul>
-
-    <script src="vendor/javascripts/jquery-2.1.1.js"></script>
-    <script src="vendor/javascripts/ttt/ttt.js"></script>
-    <script src="lib/javascripts/ttt_ui.js"></script>
-
-    <script>
-      $(function () {
-        var game = new TTT.Game();
-        var $el = $("#ttt-board");
-        var tttUI = new TTT.UI(game, $el);
-        tttUI.play();
-      });
-    </script>
-
-  </body>
+</body>
 </html>
